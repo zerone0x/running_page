@@ -132,7 +132,6 @@ const locationForRun = (
   if (MUNICIPALITY_CITIES_ARR.includes(city)) {
     province = city;
   }
-
   return { country, province, city };
 };
 

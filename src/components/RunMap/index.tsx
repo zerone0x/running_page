@@ -40,6 +40,7 @@ const RunMap = ({
 }: IRunMapProps) => {
   const { provinces } = useActivities();
   const mapRef = useRef<MapRef>();
+
   const mapRefCallback = useCallback(
     (ref: MapRef) => {
       if (ref !== null) {
@@ -47,8 +48,8 @@ const RunMap = ({
         const map = ref.getMap();
         if (map && IS_CHINESE) {
           map.addControl(new MapboxLanguage({ defaultLanguage: 'zh-Hans' }));
-          if (!ROAD_LABEL_DISPLAY) {
-            // todo delete layers
+          if("1TODO"){
+          // if (!ROAD_LABEL_DISPLAY) {
             map.on('load', () => {
               MAP_LAYER_LIST.forEach((layerId) => {
                 map.removeLayer(layerId);
@@ -133,11 +134,11 @@ const RunMap = ({
       </Source>
       {isSingleRun && (
         <RunMarker
-          startLat={startLat}
-          startLon={startLon}
-          endLat={endLat}
-          endLon={endLon}
-        />
+        startLat={startLat}
+        startLon={startLon}
+        endLat={endLat}
+        endLon={endLon}
+      />
       )}
       <span className={styles.runTitle}>{title}</span>
       <FullscreenControl style={fullscreenButton} />
