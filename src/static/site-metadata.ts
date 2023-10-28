@@ -11,14 +11,14 @@ interface ISiteMetadataResult {
 
 const data: ISiteMetadataResult = {
   siteTitle: 'Running Page',
-  siteUrl: 'https://craftship.xyz/running_page/',
+  siteUrl: 'https://angryrun.vercel.app/',
   logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
   description: 'Personal site and blog',
   navLinks: [
-    {
-      name: 'Blog',
-      url: 'https://craftship.xyz/',
-    },
+    // {
+    //   name: 'Blog',
+    //   url: 'https://craftship.xyz/',
+    // },
   ],
 };
 
