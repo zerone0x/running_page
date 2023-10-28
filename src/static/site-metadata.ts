@@ -10,15 +10,15 @@ interface ISiteMetadataResult {
 }
 
 const data: ISiteMetadataResult = {
-  siteTitle: 'Running Page',
+  siteTitle: 'Running Journey',
   siteUrl: 'https://angryrun.vercel.app/',
-  logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
+  logo: 'https://qph.cf2.poecdn.net/main-132223687_38639513287_2_1.png?w=1024&h=1024',
   description: 'Personal site and blog',
   navLinks: [
     // {
     //   name: 'Blog',
     //   url: 'https://craftship.xyz/',
-    // },
+  
   ],
 };
 
