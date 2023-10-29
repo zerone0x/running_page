@@ -10,7 +10,7 @@ interface ISiteMetadataResult {
 }
 
 const data: ISiteMetadataResult = {
-  siteTitle: 'Running Journey',
+  siteTitle: 'Go out and Run',
   siteUrl: 'https://angryrun.vercel.app/',
   logo: 'https://qph.cf2.poecdn.net/main-132223687_38639513287_2_1.png?w=1024&h=1024',
   description: 'Personal site and blog',

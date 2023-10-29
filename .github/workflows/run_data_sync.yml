@@ -3,20 +3,12 @@ name: Run Data Sync
 on:
   workflow_dispatch: 
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 23 * * *'
   push:
     branches:
       - master
     paths:
-      # - run_page/nike_sync.py
-      # - run_page/nike_to_strava_sync.py
       - run_page/strava_sync.py
-      # - run_page/gen_svg.py
-      # - run_page/garmin_sync.py
-      # - run_page/keep_sync.py
-      # - run_page/gpx_sync.py
-      # - run_page/tcx_sync.py
-      # - run_page/garmin_to_strava_sync.py
       - requirements.txt
 
 env:
